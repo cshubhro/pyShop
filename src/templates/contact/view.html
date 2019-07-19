@@ -11,18 +11,24 @@
             <title>Hello, world!</title>
         </head>
         <body> 
-            <dic class="text-center">
+            <div class="text-center">
 
             <h1> {{ title }}</h1>
             <h3 class=text-muted>Hello world!</h3>
             <p>{{ uhuh }} </p>
-            <p>probably contact page</p>
+            <p>probably a contact page.</p>
+            </div>
             <div class="container">
-            <form method="POST"> {% csrf_token %}
-                <input type="text" class="form-control" placeholder="full name plz" name="fullname">
-                <button type="submit" class="btn btn-success">submit !</button>
-            </form>
-            </dic>
+            <div class = "row">
+                <div class="col">
+                    <div class = "col-sm-6 col-12">
+                            <form method="POST"> {% csrf_token %}
+                                    {{ form }}
+                                    <button type = "submit" class = "btn-success btn" style="margin-top:20px">submit !</button>
+                            </form>
+                    </div>
+                </div>
+            </div>
             </div>
 
             <!-- Optional JavaScript -->
