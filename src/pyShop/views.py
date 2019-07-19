@@ -3,21 +3,21 @@ from django.shortcuts import render
 
 def homePage(request):
     context = {
-        "uhuh" : "i wanna die"
-        "title" : "homePage"
+        "title" : "homePage",
+        "uhuh" : "i wanna die",
     }
     return render(request, "homePage.html", context)
 
 def aboutPage(request):
     context = {
-        "title" : "aboutPage"
-        "uhuh" : "y tho ???????"
+        "title" : "aboutPage",
+        "uhuh" : "y tho ???????",
     }
     return render(request, "homePage.html", context)
 
 def contactPage(request):
     context = {
-        "title" : "contactPage"
-        "uhuh" : "becuz life"
+        "title" : "contactPage",
+        "uhuh" : "becuz life",
     }
     return render(request, "homePage.html", context)
