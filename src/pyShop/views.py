@@ -17,15 +17,13 @@ def aboutPage(request):
     return render(request, "homePage.html", context)
 
 def contactPage(request):
-    formHello = contactForm
+    formHello = contactForm(request.POST or None)
     context = {
         "title" : "contactPage",
         "uhuh" : "becuz life",
         "form" : formHello
     }
-    if request.method == "POST":
-        print(request.POST.get('fullname'))
-        print(request.POST.get('email'))
-        print(request.POST.get('content'))
 
+    if formHello.is_valid():
+        print(formHello.cleaned_data)
     return render(request, "contact/view.html", context)
