@@ -20,4 +20,4 @@ def contactPage(request):
         "title" : "contactPage",
         "uhuh" : "becuz life",
     }
-    return render(request, "homePage.html", context)
+    return render(request, "contact/view.html", context)
