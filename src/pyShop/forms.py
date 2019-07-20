@@ -32,5 +32,9 @@ def clean_email(self):
         raise forms.ValidationError("has to have gmail.com in email")
     return email
 
+class loginForm(forms.Form):
+    username = forms.CharField()
+    password = forms.CharField()
+
 
     
