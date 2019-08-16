@@ -6,7 +6,7 @@ from .forms import contactForm, loginForm
 def homePage(request):
     context = {
         "title" : "homePage",
-        "uhuh" : "i wanna die",
+        "uhuh" : "i wanna die",  
     }
     return render(request, "homePage.html", context)
 
